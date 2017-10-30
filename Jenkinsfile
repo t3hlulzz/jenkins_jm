@@ -4,7 +4,7 @@ pipeline
 
     stages
     {
-        stage ('build')
+        stage ('Build')
         {
         agent { docker { image 'maven:3-alpine' } }
             steps
@@ -12,7 +12,7 @@ pipeline
             sh 'mvn clean install'
             }
         }
-        stage ('test')
+        stage ('Test')
         {
         agent { docker { image 'maven:3-alpine' } }
             steps
