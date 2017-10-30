@@ -8,7 +8,8 @@ pipeline
         agent { docker { image 'maven:3-alpine' } }
             steps
             {
-            sh 'mvn clean install'
+            sh 'echo $USER'
+            //sh 'mvn clean install'
             }
         }
         stage ('archive artifacts')
