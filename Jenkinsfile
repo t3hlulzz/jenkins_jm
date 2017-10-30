@@ -1,7 +1,7 @@
 pipeline
 {
     agent any
-
+//
     stages
     {
     agent { docker { image 'maven:3-alpine' } }
