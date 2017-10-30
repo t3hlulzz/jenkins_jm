@@ -22,11 +22,11 @@ pipeline
             }
         }
     }
-    /*post
-    *{
-    *  success
-    *  {
-    *    archiveArtifacts '**/target/*.jar'
-    *  }
-    */}
+    //post
+    //{
+    //  success
+    //  {
+    //   archiveArtifacts '**/target/*.jar'
+    //  }
+    //}
 }
