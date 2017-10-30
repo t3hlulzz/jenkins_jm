@@ -21,12 +21,13 @@ pipeline
             archiveArtifacts '**/target/*.jar'
             }
         }
-    }
-    stage ('Archive')
-    {
-      agent { docker { image 'maven:3-alpine' } }
-      {
-       archiveArtifacts '**/target/*.war'
-      }
+
+        stage ('Archive')
+        {
+          agent { docker { image 'maven:3-alpine' } }
+          {
+           archiveArtifacts '**/target/*.war'
+          }
+        }
     }
 }
