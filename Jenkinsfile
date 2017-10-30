@@ -14,7 +14,10 @@ pipeline
         }
         stage ('archive artifacts')
         {
+        steps
+        {
         archiveArtifacts artifacts: '*.jar', onlyIfSuccessful: true
+        }
         }
     }
 }
