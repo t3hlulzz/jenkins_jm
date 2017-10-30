@@ -11,5 +11,9 @@ pipeline
             sh 'mvn clean install'
             }
         }
+        stage ('archive artifacts')
+        {
+        archiveArtifacts artifacts: '*.jar', onlyIfSuccessful: true
+        }
     }
 }
