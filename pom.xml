@@ -31,6 +31,7 @@
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
               <mainClass>com.mycompany.app.App</mainClass>
+              <failOnMissingWebXml>false</failOnMissingWebXml>
             </manifest>
           </archive>
         </configuration>
