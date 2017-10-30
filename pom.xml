@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
   <properties>
     <build.number>SNAPSHOT</build.number>
   </properties>
@@ -23,8 +23,8 @@
       <plugin>
         <!-- Build an executable JAR -->
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>3.0.2</version>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.0</version>
         <configuration>
           <archive>
             <manifest>

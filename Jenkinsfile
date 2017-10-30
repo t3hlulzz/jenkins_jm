@@ -9,7 +9,7 @@ pipeline
         agent { docker { image 'maven:3-alpine' } }
             steps
             {
-            sh 'mvn clean install -Dbuild.number=${BUILD_NUMBER}'
+            sh 'mvn clean install -Dversion=${BUILD_NUMBER}'
             }
         }
         stage ('Test')
