@@ -2,7 +2,7 @@ pipeline
 {
     agent any
 
-    stagesj
+    stages
     {
         stage ('Build')
         {
