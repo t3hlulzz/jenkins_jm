@@ -2,14 +2,15 @@ pipeline
 {
     agent any
 
-    stages
+    stagesj
     {
         stage ('Build')
         {
         agent { docker { image 'maven:3-alpine' } }
             steps
             {
-            sh 'mvn clean install -Dversion=${BUILD_NUMBER}'
+            sh 'mvn compile war:war -Dversion=${BUILD_NUMBER}'
+
             }
         }
         stage ('Test')
