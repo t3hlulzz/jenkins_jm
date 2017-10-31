@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mycompany.app</groupId>
-  <artifactId>my-app</artifactId>
+  <artifactId>hw-app</artifactId>
   <packaging>jar</packaging>
   <version>1.0-</version>
   <!--build.number>SNAPSHOT</build.number-->
@@ -17,7 +17,7 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>${artifactId}-build${version}</finalName>
+    <finalName>${artifactId}-build-${version}</finalName>
     <plugins>
       <plugin>
         <!-- Build an executable JAR -->
