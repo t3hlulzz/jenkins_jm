@@ -18,7 +18,7 @@ pipeline
             steps
             {
             sh 'mvn test'
-            archiveArtifacts '**/target/*.jar'
+
             }
         }
     }
